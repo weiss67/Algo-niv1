@@ -12,3 +12,15 @@
  * 
  * 
 */
+
+public class exo4 {
+    public static void main(String[] args) {
+ 
+          int a = 14;
+            
+          if (a % 2 == 0)
+            System.out.println("La valeur("+ a +") est divisible");
+            else
+            System.out.println("La valeur("+ a +") n'est pas divisible");
+    }
+}
