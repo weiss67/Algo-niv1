@@ -17,3 +17,20 @@
  * 
  * 
 */
+
+public class exo3 {
+    public static void main(String[] args) {
+ 
+          int a = 2;
+          int b = 3;
+ 
+          int result = a - b;
+
+          if (result % 2 == 0) {
+            System.out.println("La valeur("+ result +") est pair");
+            } else {
+                System.out.println("La valeur("+ result +") est impair");
+            }
+ 
+    }
+}
