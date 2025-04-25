@@ -6,7 +6,7 @@
  * 
  * prenom = "Eudes"
  * 
- * age = 32Jérémie
+ * age = 32
  * 
  * Je m'appelle Eudes , j'ai 32 ans
  * 
