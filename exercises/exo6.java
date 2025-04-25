@@ -6,10 +6,27 @@
  * 
  * prenom = "Eudes"
  * 
- * age = 32
+ * age = 32Jérémie
  * 
  * Je m'appelle Eudes , j'ai 32 ans
  * 
  * 
  * 
 */
+
+import java.util.Scanner;
+
+
+public class exo6 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+ 
+        System.out.println("Entrez votre prénom");
+        String a = sc.nextLine();
+        System.out.println("Entrez votre âge");
+        int b = sc.nextInt();
+
+        System.out.println("Je m'appelle "+ a +" j'ai "+ b +" ans.");
+    }
+}

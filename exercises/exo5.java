@@ -30,7 +30,6 @@ public class exo5 {
 
         System.out.println("Entrez la valeur C");
         int c = sc.nextInt();
-
         int result2 = result1 / c;
         System.out.println(result1 +" divisé par "+ c +" est " + result2);
 
