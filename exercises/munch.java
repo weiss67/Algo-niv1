@@ -18,9 +18,9 @@ public class munch {
     public static void main(String[] args) {
 
     int milk = 99;
-    int cereales = 99;
+    int cereales = 100;
 
-    if (milk >= 100 || cereales >= 100) {
+    if (milk >= 100 && cereales >= 100) {
         System.out.println("Je peux prendre mon petit déjeuner");
         System.out.println("J’ajoute le lait et les céréales dans le bol");
     } else { 

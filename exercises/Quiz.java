@@ -29,6 +29,7 @@ public class Quiz {
         System.out.println("Votre score final est : " + quiz.result);
 
         sc.close();
+
     }
 
     public void quizer(String query, boolean bool) {
