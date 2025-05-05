@@ -29,7 +29,6 @@ public class Quiz {
         System.out.println("Votre score final est : " + quiz.result);
 
         sc.close();
-
     }
 
     public void quizer(String query, boolean bool) {
@@ -48,8 +47,7 @@ public class Quiz {
             System.out.println("Entrée invalide. Veuillez taper 'true' ou 'false'.");
             sc.next(); // consomme l'entrée invalide pour éviter une boucle infinie
         }
-
-        System.out.println(); // ligne vide pour séparer les questions
+        System.out.println();
     }
 }
 
