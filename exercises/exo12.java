@@ -31,7 +31,7 @@ public class exo12 {
         int percentage = sc.nextInt();
 
         double promo = (percentage * price) / 100;
-        double result = price - promo;
+        double result = Math.round(price - promo);
 
         System.out.println("Prix "+ result  +"après réduction de "+ percentage +"%");
 

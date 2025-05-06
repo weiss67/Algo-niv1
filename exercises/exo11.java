@@ -29,8 +29,10 @@ public class exo11 {
         int debit = sc.nextInt();
 
         if (solde >= debit) {
-            int newsolde = solde - debit;
-            System.out.println("Votre nouveau solde est à "+ newsolde);
+            //int newsolde = solde - debit;
+            solde -= debit;
+            //System.out.println("Votre nouveau solde est à "+ newsolde);
+            System.out.println("Votre nouveau solde est à "+ solde);
         } else {
             System.out.println("Opération refusée, fond insuffissant !");
         }

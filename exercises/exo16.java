@@ -37,12 +37,10 @@
 import java.util.Scanner;
 
 public class exo16 {
-
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
         
-        System.out.println("Quel est l'âge de votre passager ?");
         int age = sc.nextInt();
 
         System.out.println("Le passager veut-il une classe business (oui/non) ?");
@@ -56,44 +54,47 @@ public class exo16 {
         System.out.println("Nombre de places disponibles :");
         int seats = sc.nextInt();
 
-        double result1 = 0;
-        double result2 = 0;
-        double result3 = 0;
-        double result4 = 0;
-        double result5 = 0;
+        System.out.println("Quel est l'âge de votre passager ?");
+        age = sc.nextInt();
 
         //Réduction de 20% si le passager est mineur
         if (age < 18) {
-            result1 = - price * 0.2;
-            System.out.println("Réduction de 20% appliquée pour âge mineur : "+ result1);
+            price = price - (price * 0.2);
+            System.out.println("Réduction de 20% appliquée pour âge mineur : "+ String.format("%.2f", price));
         }
         //Réduction de 40% si le passager est senior de plus 60 ans
         if (age > 60) {
-            result2 = - price * 0.4;
-            System.out.println("Réduction de 40% appliquée pour âge senior : "+ result2);
+            price = price - (price * 0.4);
+            System.out.println("Réduction de 40% appliquée pour âge senior : "+ String.format("%.2f", price));
         }
         //Augmentation de 20% si le passager a choisit la classe business ?
         if (business) {
-            result3 = + price * 0.2;
-            System.out.println("Augmentation de 20% appliquée pour classe business : "+ result3);
+            price = price + (price * 0.2);
+            System.out.println("Augmentation de 20% appliquée pour classe business : "+ String.format("%.2f", price));
         }
         //Réduction de 20% si il y a plus de 60 places disponibles
-        //Augmentation de 20% si il y a moins de 20 places disponibles
         if (seats > 60) {
-            result4 = - price * 0.2;
-            System.out.println("Réduction de 20% appliquée car il y a plus de 60 places disponibles : "+ result4);
+            price = price - (price * 0.2);
+            System.out.println("Réduction de 20% appliquée car il y a plus de 60 places disponibles : "+ String.format("%.2f", price));
         }
+        //Augmentation de 20% si il y a moins de 20 places disponibles
         if (seats < 20) {
-            result5 = + price * 0.2;
-            System.out.println("Augmentation de 20% appliquée car il y a moins de 20 places disponibles : "+ result5);
+            price = price + (price * 0.2);
+            System.out.println("Augmentation de 20% appliquée car il y a moins de 20 places disponibles : "+ String.format("%.2f", price));
         }
 
-        double total = price + (result1 + result2 + result3 + result4 + result5);
-        System.out.println("Le prix du vol est de " + total + " euros");
+        System.out.println("Le prix du vol est de " + String.format("%.2f", price) + " euros");
 
         sc.close();
     }
 }
+
+        // (variable, operator, chiffre, negation, percentage)
+
+        // (age, <, 18, -, 0.2)
+        // (age, >, 60, -, 0.4)
+        // (seats, >, 60, -, 0.2)
+        // (seats, <, 20, +, 0.2)
 
 
 // import java.util.Scanner;
