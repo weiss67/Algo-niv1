@@ -37,6 +37,7 @@ public class exo14 {
 
             boolean result = (answer_a || answer_b) && answer_c;
 
+            //System.out.println("(A = "+ answer_a +" or B = "+ answer_b +") and C = "+ answer_c +" donne cela : "+ (answer_a || answer_b) && answer_c+ "");
             System.out.println("(A = "+ answer_a +" or B = "+ answer_b +") and C = "+ answer_c +" donne cela : "+ result);
 
         } else {
