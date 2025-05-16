@@ -38,5 +38,7 @@ public class exo5 {
             System.out.println("La valeur("+ result2 +") est supérieur");
             else
             System.out.println("La valeur("+ result2 +") est inférieur");
+
+      sc.close();
     }
 }

@@ -28,5 +28,7 @@ public class exo6 {
         int b = sc.nextInt();
 
         System.out.println("Je m'appelle "+ a +" j'ai "+ b +" ans.");
+
+        sc.close();
     }
 }

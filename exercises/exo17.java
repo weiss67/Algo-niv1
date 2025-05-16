@@ -72,7 +72,6 @@ public class exo17 {
     }
 }
 
-
 // optimisé par IA
 // import java.util.Scanner;
 

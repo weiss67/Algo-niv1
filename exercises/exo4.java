@@ -22,5 +22,6 @@ public class exo4 {
             System.out.println("La valeur("+ a +") est divisible");
             else
             System.out.println("La valeur("+ a +") n'est pas divisible");
+
     }
 }
